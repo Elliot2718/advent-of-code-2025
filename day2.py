@@ -1,3 +1,9 @@
+"""
+Approach: create ranges of all the ranges, then for each number
+in each range, split it in half and check if the halves are equal.
+We note that we don't need to check odd length numbers.
+"""
+
 with open("day2.txt") as f:
     ranges = f.read().split(',')
 

@@ -1,3 +1,11 @@
+"""
+Approach: parse out the moves, and for each move, determine
+how many times it passes zero by finding the quotient when
+divided by 100. We had trouble with the "left" moves, so we
+just treated them as "right" moves and then reverted it after
+determining the number of zeros.
+"""
+
 def zero_counter(start, move):
     """
     example: start at 1, move is R10, output 11

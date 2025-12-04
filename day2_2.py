@@ -1,3 +1,11 @@
+"""
+Approach: parse the ranges, and for each number in each range,
+check if the id is valid. We check if the id is valid by looking
+for all substrings of the number that evenly divide the length of
+the number. E.g. for a number of length 12, we need to check the 
+substrings of length 1, 2, 3, 4, and 6.
+"""
+
 with open("day2.txt") as f:
     ranges = f.read().split(',')
 

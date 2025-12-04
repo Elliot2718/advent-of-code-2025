@@ -1,3 +1,7 @@
+"""
+Approach: parse out the moves, determine the position after each move,
+check if the current position is zero, and if so, increment the counter 
+"""
 with open("day1_input.txt", "r") as f:
     data = [line.strip() for line in f.readlines()]
 
